@@ -23,7 +23,7 @@ class AdminServiceProvider extends Service
         set_error_handler([$this->app->make(Error::class), 'appError']);
         Container::getInstance()->plugin->register();
         $this->updateVersion();
-        \ExAdmin\ui\Route::setObjectParamAfter(function ($name){
+        \tadm\ui\Route::setObjectParamAfter(function ($name){
             return $this->app->make($name);
         });
     }
