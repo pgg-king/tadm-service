@@ -1,0 +1,31 @@
+{
+    "name": "pengking/tadm-service",
+    "description": "tadm-service",
+    "license": "Apache-2.0",
+    "keywords": [
+
+    ],
+    "authors": [
+        {
+            "name": "pengking",
+            "email": "411913023@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "topthink/think-migration": "^3",
+        "topthink/think-queue": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tadm\\service\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Tadm\\service\\AdminServiceProvider"
+            ]
+        }
+    }
+}
